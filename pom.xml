@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.lila</groupId>
+	<artifactId>lila-aop</artifactId>
+	<version>0.1</version>
+	<packaging>jar</packaging>
+
+	<name>lila-aop</name>
+	<url>http://caarlos0.github.com/lila</url>
+	<description>A simple AOP Guice module to provide simple aspects to validate permissions.</description>
+
+	<scm>
+		<url>scm:git:git@github.com:caarlos0/lila.git</url>
+		<connection>scm:git:git@github.com:caarlos0/lila.git</connection>
+		<developerConnection>scm:git:git@github.com:caarlos0/lila.git</developerConnection>
+	</scm>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/caarlos0/lila-aop/issues</url>
+	</issueManagement>
+
+
+	<developers>
+		<developer>
+			<id>caarlos0</id>
+			<name>Carlos Alexandro Becker</name>
+			<url>https://github.com/caarlos0</url>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>http://caarlos0.github.com/maven/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>http://caarlos0.github.com/maven/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+	<repositories>
+		<!-- SNAPSHOTS -->
+		<repository>
+			<id>caarlos0-maven-repo-snapshots</id>
+			<name>Maven repository for SNAPSHOTS</name>
+			<url>http://caarlos0.github.com/maven/snapshots</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.lila</groupId>
+			<artifactId>lila</artifactId>
+			<version>0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+</project>
